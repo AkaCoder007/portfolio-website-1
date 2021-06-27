@@ -1,0 +1,67 @@
+body {
+    /* background-color: black; */
+}
+
+
+/* #tester { */
+
+
+/* border: 4px solid black; */
+
+
+/* background: radial-gradient(rgb(59, 57, 57), black);
+    position: fixed;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+} */
+
+
+/* #tester p {
+    color: antiquewhite;
+} */
+
+
+/* #tester::after {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-image: url(../assets/images/myprofileimage.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat; */
+
+
+/* background: linear-gradient(45deg, pink, blue); */
+
+
+/* text-transform: uppercase; */
+
+
+/* } */
+
+.container {
+    width: 90vw;
+    display: flex;
+}
+
+.container div {
+    /* margin: 3vw; */
+    height: 10vh;
+    width: 40px;
+}
+
+#div1 {
+    background-color: blue;
+}
+
+#div2 {
+    background-color: pink;
+}
+
+#div3 {
+    background-color: black;
+}
+
+#div4 {
+    background-color: red;
+}

@@ -1,67 +1,31 @@
 body {
-    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    ;
 }
 
+input {
+    margin: 80px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(235, 28, 73);
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
 
-/* #tester { */
-
-
-/* border: 4px solid black; */
-
-
-/* background: radial-gradient(rgb(59, 57, 57), black);
-    position: fixed;
-    overflow: hidden;
-    transition: all 2s ease-in-out;
-} */
-
-
-/* #tester p {
-    color: antiquewhite;
-} */
-
-
-/* #tester::after {
+input::after {
     content: "";
-    display: block;
-    height: 100px;
-    width: 100px;
-    background-image: url(../assets/images/myprofileimage.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat; */
-
-
-/* background: linear-gradient(45deg, pink, blue); */
-
-
-/* text-transform: uppercase; */
-
-
-/* } */
-
-.container {
-    width: 90vw;
-    display: flex;
+    position: absolute;
+    width: 0px;
+    height: 20px;
+    background-color: aqua;
+    transition: all 0.3s ease-in-out;
 }
 
-.container div {
-    /* margin: 3vw; */
-    height: 10vh;
-    width: 40px;
-}
-
-#div1 {
-    background-color: blue;
-}
-
-#div2 {
-    background-color: pink;
-}
-
-#div3 {
-    background-color: black;
-}
-
-#div4 {
-    background-color: red;
+input:focus::after {
+    /* position: relative; */
+    width: 198px;
+    color: rgb(173, 37, 37);
+    outline: none;
 }

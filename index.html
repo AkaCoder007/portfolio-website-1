@@ -15,7 +15,11 @@
     <script src="https://kit.fontawesome.com/076a07337b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" <!-- cn ninja maam -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="indicators.css">
     <!-- <link rel="stylesheet" href="cnninja.style"> -->
+    <link rel="stylesheet" href="animations.css" />
+
 
     <title>Document</title>
 </head>
@@ -70,21 +74,22 @@
         <section id="about">
             <div id="my-profileimage">
                 <img src="assets/images/myprofileimage2.jpeg" alt="" />
+                <div id="shade">
+
+                </div>
             </div>
 
             <div class="info">
                 <p>
-                    <strong>HEYY THERE !</strong> Allow Me to Introduce myself <br /> I am currently persuing my undergrad in
-                    <strong>Computer Science </strong>and in the Awesome journey of becoming a <strong>Full-Stack web developer</strong> . I'm enthusiatic in working on projects on
+                    <strong>HEYY THERE !</strong> Allow Me to Introduce myself <br /> I am currently pursuing my undergrad in
+                    <strong>Computer Science </strong>and I am in the Awesome journey of becoming a <strong>Full-Stack web developer</strong> . I'm enthusiatic in working on projects on
                     <strong>Full Stack Web Dev</strong> and
                     <strong>Problem solving</strong> algorithms.
-                    <!-- I'm quietly <strong>confident</strong> , <strong>naturally curious</strong>,
-                    and perpetually working on improving my chops one design problem at a time. -->
                 </p>
                 <div>
-                    <label for="resumelink"><p style="color: rgb(185, 45, 64)">
+                    <label for="resumelink"><p style="color:#ff003b;">
                 Don't Forget to Check out my
-                <strong style="color: rgb(185, 45, 64)"> RESUME</strong>
+                <strong style="color: #ff003b;"> RESUME</strong>
               </p>
             </label>
 
@@ -103,22 +108,186 @@
                 </div>
                 <div class="word">Skills</div>
             </div>
+            <div id="cube-animated-one">
+
+                <div class="cube">
+                    <div class="face one"></div>
+                    <div class="face six"></div>
+                    <div class="face two"></div>
+                    <div class="face five"></div>
+                    <div class="face three"></div>
+                    <div class="face four"></div>
+                </div>
+            </div>
+
+
+            <!-- <div id="cube-animated-two">
+
+                <div class="cube">
+                    <div class="face one"></div>
+                    <div class="face six"></div>
+                    <div class="face two"></div>
+                    <div class="face five"></div>
+                    <div class="face three"></div>
+                    <div class="face four"></div>
+                </div>
+            </div> -->
 
             <div id="indicators">
-                <div id="C" class="perctge">
-                    <div>C++</div>
+
+                <!-- <div id="C" class="perctge">
+
+                    <div class="inside-contents">C++
+
+                    </div>
+                </div> -->
+
+                <div class="circular-indicators" id="html">
+
+                    <div class="nameinside">
+                        <div class="perc">0</div>
+                        %
+
+
+                    </div>
+                    <div class="skill-name">
+
+                        HTML
+                    </div>
+
+                    <div class="inner-circle"></div>
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
                 </div>
 
-                <div class="perctge" id="html">
+
+
+
+
+                <div class="circular-indicators" id="css3">
+                    <div class="nameinside">
+                        <div class="perc">0</div>
+                        %
+
+
+                    </div>
+                    <div class="skill-name">
+
+                        CSS3
+                    </div>
+                    <div class="inner-circle"></div>
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="circular-indicators" id="bootstrap">
+                    <div class="nameinside">
+                        <div class="perc">0</div>
+                        %
+
+
+                    </div>
+                    <div class="skill-name">
+
+                        BOOTSTRAP
+                    </div>
+
+                    <div class="inner-circle"></div>
+
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="circular-indicators" id="sass">
+                    <div class="nameinside">
+                        <div class="perc">0</div>
+                        %
+
+
+
+
+
+                    </div>
+                    <div class="skill-name">
+
+                        SASS
+                    </div>
+
+                    <div class="inner-circle"></div>
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="circular-indicators" id="javascript">
+                    <div class="nameinside">
+                        <div class="perc">0</div>
+                        %
+
+
+                    </div>
+                    <div class="skill-name">
+
+                        JAVASCRIPT </div>
+
+                    <div class="inner-circle"></div>
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="circular-indicators" id="c">
+                    <div class="nameinside">
+                        <div class="perc">0</div>
+                        %
+
+
+                    </div>
+                    <div class="skill-name">
+
+                        C++
+                    </div>
+
+
+                    <div class="inner-circle"></div>
+                    <div class="bar left">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="bar right">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <!-- <div class="perctge" id="html">
                     <div id="htmlinside">HTML</div>
-                </div>
-                <div class="perctge" id="js">
+                </div> -->
+
+
+
+
+
+
+                <!-- <div class="perctge" id="js">
                     <div>Javascript</div>
-                </div>
-                <div class="perctge" id="Sass">
+                </div> -->
+                <!-- <div class="perctge" id="Sass">
                     <div>Sass</div>
-                </div>
-                <div class="perctge" id="css">
+                </div> -->
+                <!-- <div class="perctge" id="css">
                     <div>CSS</div>
                 </div>
                 <div class="perctge" id="css2">
@@ -129,13 +298,31 @@
                 </div>
                 <div class="perctge" id="bootstrap">
                     <div>Bootstrap</div>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <!--  ...........experience section -->
 
         <section id="experience" class="exp_education">
+
+
+
+
+            <div id="background-squares">
+                <div class="squares_small bgone" id="two"></div>
+                <div class="squares_small bgtwo" id="three"></div>
+                <div class="squares_small bgfour" id="four"></div>
+                <div class="squares_small bgtwo" id="one"></div>
+
+                <div class="squares_small bgone" id="five"></div>
+                <div class="squares_small bgtwo" id="six"></div>
+                <div class="squares_small bgfour" id="seven"></div>
+                <div class="squares_small bgtwo" id="eight"></div>
+
+
+            </div>
+
             <!-- logooooooo -->
             <div class="sectionlogo" id="exp_lgosectn">
                 <!-- <div class="word">My</div> -->
@@ -231,6 +418,7 @@
         <!--....... portfolio section  ..... -->
         <section id="portfolio"></section>
         <!--,........... contact section............. -->
+        <div class="border"></div>
         <section id="footer">
             <div id="contact">
 
@@ -371,5 +559,48 @@
     <script src="JS/header.js"></script>
 </body>
 
+<script>
+    var number = document.querySelectorAll(".perc");
+    var num = 0;
+    var perc_bootstrap = 60;
+    var perc_css = 80;
+    var perc_html = 95;
+    var perc_javascript = 70;
+    var perc_sass = 65;
+    var perc_c = 90;
+
+
+    // function increament() {
+
+
+
+
+    // }
+    setInterval(() => {
+
+
+
+        if (num == 100) {
+            clearInterval();
+        } else {
+            num++;
+            for (var i = 0; i < 6; i++) {
+
+
+
+                if (i == 0 && num > perc_html) continue;
+                if (i == 1 && num > perc_css) continue;
+                if (i == 2 && num > perc_bootstrap) continue;
+                if (i == 3 && num > perc_sass) continue;
+                if (i == 4 && num > perc_javascript) continue;
+                if (i == 5 && num > perc_c) continue;
+                number[i].textContent = num;
+
+
+            }
+        }
+    }, 50);
+    // }
+</script>
 
 </html>

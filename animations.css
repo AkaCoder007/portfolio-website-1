@@ -1,0 +1,104 @@
+#cube-animated-one {
+    position: absolute;
+    width: 300;
+    height: 300px;
+    top: 19%;
+    left: 45%;
+    z-index: -8;
+    animation-delay: 0ms;
+    /* margin-top: -100px; */
+    /* background-color: aqua; */
+    margin-bottom: 80px;
+}
+
+.cube {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+    transform-style: preserve-3d;
+    perspective: 900vw;
+    /* transform: rotateX(30deg) rotateY(50deg); */
+    animation: rotate 4s ease-in-out infinite alternate;
+    /* background-color: rgb(111, 0, 255); */
+}
+
+
+/* @keyframes translate {
+    to {
+        transform: translateX(-3vw);
+    }
+} */
+
+@keyframes rotate {
+    from {}
+    /* 50% {
+        transform: rotateY(180deg);
+    } */
+    60% {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+.face {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    border-radius: 20%;
+    /* color: black; */
+    /* box-shadow: 0px 0px 0px 6px; */
+    /* outline: 2px solid black; */
+    /* transition: all 8 s; */
+}
+
+.one {
+    background-color: rgb(32, 206, 148);
+    background: url(images/aws.jpeg);
+    background-size: contain;
+}
+
+.six {
+    background-color: rgb(18, 236, 236);
+    transform: translateZ(-150px);
+    background: url(images/python.png);
+    background-size: contain;
+}
+
+.five {
+    background-color: rgb(129, 52, 29);
+    transform: rotateY(90deg) translateZ(75px) translateX(75px);
+    background: url(images/sass.png);
+    background-size: contain;
+}
+
+.two {
+    background-color: rgb(129, 52, 29);
+    transform: rotateY(90deg) translateZ(-75px) translateX(75px);
+    background: url(images/MongoDB-sm-logo.gif);
+    background-size: cover;
+}
+
+.three {
+    background-color: rgb(29, 39, 129);
+    transform: rotateX(90deg) translateZ(-75px) translateY(-75px);
+    background: url(images/css1.png);
+    background-size: contain;
+}
+
+.four {
+    background-color: rgb(29, 129, 129);
+    transform: rotateX(90deg) translateZ(75px) translateY(-75px);
+    background: url(images/Bootstrap_logo.svg.png);
+    background-size: contain;
+}
+
+
+/* .cube:hover {
+    transform: rotateY(720deg) rotateZ(100deg) scale(1.5);
+} */

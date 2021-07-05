@@ -1,0 +1,149 @@
+.circular-indicators {
+    width: 200px;
+    height: 200px;
+    /* background-color: rgb(61, 61, 60); */
+    margin: auto;
+    position: relative;
+    /* margin-top: 200px; */
+    transform: scale(0.75);
+}
+
+.bar {
+    /* top: 5%;
+    left: 5%; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 22, 22);
+    border-radius: 100%;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+.bar .progress {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 238, 255);
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+    border-radius: 100%;
+    animation: left 2s linear both, color-change 0.8s infinite alternate;
+    ;
+}
+
+#html .progress {
+    background-color: rgb(30, 240, 30);
+}
+
+#c .progress {
+    background-color: rgb(30, 240, 30);
+}
+
+#bootstrap .progress {
+    background-color: #fc04f9;
+}
+
+#javascript .progress {
+    background-color: #049fff;
+}
+
+@keyframes left {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+.right .progress {
+    animation: right 1s linear both, color-change 0.8s infinite alternate;
+    animation-delay: 2s, 0s;
+}
+
+@keyframes right {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+#html .progress {
+    animation-delay: 0s, 2s;
+}
+
+#html .right .progress {
+    animation-delay: 2s, 2s;
+}
+
+#c .progress {
+    animation-delay: 0s, 2s;
+}
+
+#c .right .progress {
+    animation-delay: 2s, 2s;
+}
+
+#bootstrap .progress {
+    animation-delay: 0s, 3s;
+}
+
+#bootstrap .right .progress {
+    animation-delay: 2s, 3s;
+}
+
+#javascript .progress {
+    animation-delay: 0s, 3s;
+}
+
+#javascript .right .progress {
+    animation-delay: 2s, 3s;
+}
+
+.inner-circle {
+    z-index: 4;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #292424;
+    transform: scale(1.03)
+}
+
+
+/* indicators name */
+
+.circular-indicators .nameinside {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+
+/* percentage shower */
+
+.circular-indicators .perc {
+    font-size: 3rem;
+    margin-right: 8px;
+    margin-bottom: 00px;
+    font-weight: 900;
+}
+
+.circular-indicators .skill-name {
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px
+}

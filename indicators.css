@@ -4,7 +4,6 @@
     /* background-color: rgb(61, 61, 60); */
     margin: auto;
     position: relative;
-    /* margin-top: 200px; */
     transform: scale(0.75);
 }
 
@@ -14,7 +13,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(24, 22, 22);
+    background-color: rgb(33, 59, 88);
     border-radius: 100%;
     clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
 }
@@ -108,7 +107,7 @@
     width: 80%;
     height: 80%;
     border-radius: 50%;
-    background-color: #292424;
+    background-color: #0f212c;
     transform: scale(1.03)
 }
 
